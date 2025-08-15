@@ -10,6 +10,8 @@ const app = express();
 
 app.use(cors());
 
+app.use(postRoutes)
+
 app.use(express.json());
 
 const start = async() => {
