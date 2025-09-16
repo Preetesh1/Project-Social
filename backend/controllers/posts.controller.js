@@ -1,4 +1,4 @@
-
+import user from "../models/user.model.js";
 
 
 export const activeCheck = async (req, res) => {
