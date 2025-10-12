@@ -1,4 +1,7 @@
 import user from "../models/user.model.js";
+import Profile from "../models/profile.model.js";
+
+import bcrypt from "bcrypt";
 
 
 export const activeCheck = async (req, res) => {
@@ -15,6 +18,23 @@ const register = async (req, res) => {
             const user = await user.findOne({
                 email
             });
+
+            if(user) return res.status(400).json({ message: "User already exists" })
+
+                const hashedPassword = await bcrypt.hash(password, 10);
+                const newUser = new user({
+                    name,
+                    email,
+                    password: hashedPassword,
+                    username
+                });
+
+                await newUser.save();
+
+                const profile = new Profile({ userId: newUser._id});
+
+                return res.json({ message: "User registered successfully" })
+
     } catch (error) {
         return res.status(500).json({ message: error.message })
     }
