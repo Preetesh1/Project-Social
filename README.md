@@ -179,7 +179,3 @@ Server will run at 👉 **`http://localhost:5000`**
 ### 🛡️ Project by **Preetesh Sharma**
 
 **DevConnect © All Rights Reserved**
-
-```
-
-```
