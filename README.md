@@ -1,9 +1,3 @@
-Perfect, I’ll mirror the **same professional, resume-ready README style** and adapt it cleanly for a **LinkedIn-style clone named `DevConnect`**.
-You can **directly copy-paste** this into your `README.md`.
-
----
-
-````md
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white)
