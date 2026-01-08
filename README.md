@@ -182,13 +182,4 @@ Server will run at 👉 **`http://localhost:5000`**
 
 ```
 
----
-
-If you want next:
-- ⭐ **Frontend README (React / Next.js)**
-- ⭐ **Production-grade README (used by FAANG interns)**
-- ⭐ **Add screenshots + GIF preview**
-- ⭐ **Make it ATS / recruiter optimized**
-
-Just tell me.
 ```
