@@ -10,7 +10,7 @@ You can **directly copy-paste** this into your `README.md`.
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)
 
 <p align="center">
-  <img src="./assets/banner.png" alt="DevConnect Banner" width="420"/>
+  <img src="./assets/banner2.png" alt="DevConnect Banner" width="420"/>
 </p>
 
 # 🌐 DevConnect – A Professional Networking Platform for Developers
