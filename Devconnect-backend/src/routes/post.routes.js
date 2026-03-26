@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const ctrl = require('../controllers/post.controller');
+const { protect } = require('../middleware/auth.middleware');
+router.use(protect);
+router.get('/feed', ctrl.getFeed);
+router.get('/search', ctrl.searchPosts);
+router.post('/', ctrl.createPost);
+router.post('/:id/like', ctrl.toggleLike);
+router.post('/:id/comment', ctrl.addComment);
+router.delete('/:id', ctrl.deletePost);
+module.exports = router;

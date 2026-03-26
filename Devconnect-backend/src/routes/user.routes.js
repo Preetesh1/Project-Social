@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const ctrl = require('../controllers/user.controller');
+const { protect } = require('../middleware/auth.middleware');
+router.use(protect);
+router.get('/search', ctrl.searchUsers);
+router.get('/notifications', ctrl.getNotifications);
+router.patch('/notifications/read', ctrl.markNotificationsRead);
+router.get('/:username', ctrl.getProfile);
+router.patch('/profile', ctrl.updateProfile);
+router.post('/:id/connect', ctrl.sendConnectionRequest);
+router.patch('/:id/connect', ctrl.respondToConnection);
+module.exports = router;
